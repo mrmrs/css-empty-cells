@@ -23,19 +23,19 @@ or download the css on github and include in your project.
 .empty-hide {     empty-cells: hide; }
 .empty-inherit {  empty-cells: inherit; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .empty-show-ns {     empty-cells: show; }
   .empty-hide-ns {     empty-cells: hide; }
   .empty-inherit-ns {  empty-cells: inherit; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .empty-show-m {     empty-cells: show; }
   .empty-hide-m {     empty-cells: hide; }
   .empty-inherit-m {  empty-cells: inherit; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .empty-show-l {     empty-cells: show; }
   .empty-hide-l {     empty-cells: hide; }
   .empty-inherit-l {  empty-cells: inherit; }
