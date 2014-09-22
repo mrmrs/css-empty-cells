@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-empty-cells)
 ## File Size
 
 686B empty-cells.css
-527B empty-cells.min.css
+527B empty-cells.min.css 
+164B minified and gzipped
 
 ## The Code
 ```
