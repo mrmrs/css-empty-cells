@@ -1,5 +1,6 @@
 {
   "name": "css-empty-cells",
+  "style": "empty-cells.css",
   "version": "0.0.5",
   "homepage": "http://github.com/mrmrs/css-empty-cells",
   "description": "Css module of single purpose classes for empty cells",
