@@ -7,9 +7,9 @@
 .empty-inherit {  empty-cells: inherit; }
 
 @media screen and (min-width: 48em) {
-  .empty-show-ns {     empty-cells: show; }
-  .empty-hide-ns {     empty-cells: hide; }
-  .empty-inherit-ns {  empty-cells: inherit; }
+  .empty-show-s {     empty-cells: show; }
+  .empty-hide-s {     empty-cells: hide; }
+  .empty-inherit-s {  empty-cells: inherit; }
 }
 
 @media screen and (min-width:48em) and (max-width: 64em) {
