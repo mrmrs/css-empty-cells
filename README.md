@@ -1,116 +1,80 @@
-# css-empty-cells 1.0.6
+# css-empty-cells
 
-Css module of single purpose classes for empty cells
+Functional CSS for empty-cells
 
-#### Stats
+## Filesize
 
-187 | 12 | 12
----|---|---
-bytes | selectors | declarations
+| File | Size |
+|------|------|
+| `dist/empty-cells.css` | 665 bytes |
+| `dist/empty-cells.min.css` | 489 bytes (148 Gzipped) |
 
-## Installation
+## Install
 
-#### With [npm](https://npmjs.com)
-
-```
-npm install --save-dev css-empty-cells
-```
-
-Learn more about using css installed with npm:
-* https://webpack.github.io/docs/stylesheets.html
-* https://github.com/defunctzombie/npm-css
-
-#### With Git
-
-http:
-```
-git clone https://github.com/tachyons-css/css-empty-cells
-```
-
-ssh:
-```
-git clone git@github.com:tachyons-css/css-empty-cells.git
+```sh
+npm install css-empty-cells
 ```
 
 ## Usage
 
-#### Using with [Postcss](https://github.com/postcss/postcss)
-
-Import the css module
+### Import
 
 ```css
 @import "css-empty-cells";
 ```
 
-Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-
-```sh
-$ npm i -g tachyons-cli
-$ tachyons path/to/css-file.css > dist/t.css
-```
-
-#### Using the css
-
-##### CDN
-The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
-
-```
-<link rel="stylesheet" href="http://unpkg.com/css-empty-cells@1.0.6/css/css-empty-cells.min.css" />
-```
-
-##### Locally
-The built css is located in the `css` directory. It contains an unminified and minified version.
-You can either cut and paste that css or link to it directly in your html.
+### CDN
 
 ```html
-<link rel="stylesheet" href="path/to/module/css/css-empty-cells">
+<link rel="stylesheet" href="https://unpkg.com/css-empty-cells/dist/empty-cells.min.css">
 ```
 
-#### Development
+### Direct
 
-The source css files can be found in the `src` directory.
-Running `$ npm start` will process the source css and place the built css in the `css` directory.
-
-## The css
-
-```css
-/*
-   EMPTY CELLS
-*/
-.empty-show { empty-cells: show; }
-.empty-hide { empty-cells: hide; }
-.empty-inherit { empty-cells: inherit; }
-@media screen and (min-width: 48em) {
- .empty-show-ns { empty-cells: show; }
- .empty-hide-ns { empty-cells: hide; }
- .empty-inherit-ns { empty-cells: inherit; }
-}
-@media screen and (min-width:48em) and (max-width: 64em) {
- .empty-show-m { empty-cells: show; }
- .empty-hide-m { empty-cells: hide; }
- .empty-inherit-m { empty-cells: inherit; }
-}
-@media screen and (min-width: 64em) {
- .empty-show-l { empty-cells: show; }
- .empty-hide-l { empty-cells: hide; }
- .empty-inherit-l { empty-cells: inherit; }
-}
+```html
+<link rel="stylesheet" href="path/to/css-empty-cells/dist/empty-cells.min.css">
 ```
 
-## Contributing
+## Classes
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+| Class   | Value                    |
+|---------|--------------------------|
+| `.empty-show` | `empty-cells: show;` |
+| `.empty-hide` | `empty-cells: hide;` |
+| `.empty-inherit` | `empty-cells: inherit;` |
+| `.empty-show-s` | `empty-cells: show;` |
+| `.empty-hide-s` | `empty-cells: hide;` |
+| `.empty-inherit-s` | `empty-cells: inherit;` |
+| `.empty-show-m` | `empty-cells: show;` |
+| `.empty-hide-m` | `empty-cells: hide;` |
+| `.empty-inherit-m` | `empty-cells: inherit;` |
+| `.empty-show-l` | `empty-cells: show;` |
+| `.empty-hide-l` | `empty-cells: hide;` |
+| `.empty-inherit-l` | `empty-cells: inherit;` |
 
-## Authors
+### Responsive
 
-* [mrmrs](http://mrmrs.io)
-* [johno](http://johnotander.com)
+Responsive variants are available for each class with the following suffixes:
+
+| Suffix | Media Query              |
+|--------|--------------------------|
+| `-s`   | `min-width: 32em`        |
+| `-m`   | `min-width: 48em`        |
+| `-l`   | `min-width: 96em`        |
+
+Example: `.empty-show-m` applies the property at the medium breakpoint and above.
+
+## Building
+
+```sh
+npm run build
+```
+
+Processes `src/empty-cells.css` with [Lightning CSS](https://lightningcss.dev) and outputs to `dist/`.
+
+- `dist/empty-cells.css` — formatted
+- `dist/empty-cells.min.css` — minified
 
 ## License
 
-ISC
-
+MIT
